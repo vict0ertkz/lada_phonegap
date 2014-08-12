@@ -1,49 +1,66 @@
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="css.css"/>
-<script type="text/javascript" src="validareformular.js"></script>    
-<title> titlu pagini </title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+ $(document).ready(function()
+  {  
+      $("#a1").click(function(){
+		  $("#qwerty").append("<li>inca un paragraf</li>");
+		  });
+	 $("#a2").click(function(){
+        $("#formular").show();	 
+	});
+	$("#a3").click(function(){
+        $("#ceva").append("<b>)"+$("#ceva").val("caca")+"</b>");	 
+	});
+});
+  
+    
+  
+</script>
+	   
+
+ 
 </head>
 <body>
-<div id="titlu">
-    
-</div>
-<div id="tot">
-  <div id="header">
-  <div class="titlu_cap" font="color:blue"> Slana!! </div>
-  </div>
-  <div id="menu">
-      <ul>
-       <li><a href="#">Acasa </a></li>
-	   <li><a href="despre_noi.html">Despre noi </a></li>
-	   <li><a href="stiri.html">Stiri </a></li>
-	   <li><a href="contact.html">Contact </a></li>
-	   <li><a href="links.html">Links </a></li>
+<div>
+   <p>
+      <ul id="qwerty">
+        <li>
+           <p>primu paranoiagraf
+           </p>
+	    </li>
 	  </ul>
-	  
-  </div>
-  <div id="continut">
-      <h1> Buna ziua</h1>
-	  <p> General (rez.) dr. Mircea Chelaru (fost Sef al Marelui Stat Major al Armatei Romane), Dr. Napoleon Savescu (director fondator al Dacia Revival International Society), General (rez.) Nicolae Spiroiu (fost Ministru al Apararii Nationale), Prof. dr. Mihai Popescu(Biblioteca Militara Nationala), Prof. univ. dr. dr. Alexander Rodewald(directorul Institutului de Biologie Umana al Universitatii din Hamburg, Germania), Dr. Georgeta Cardos (cercetator stiintific biolog specialist genetica - Institutul Victor Babes), Prof. doctorand Sebastian Stanculescu(paleografie si antropologie culturala).
-
-	  </p>
-	  <p>Mircea Chelaru (fost Sef al Marelui Stat Major al Armatei Romane), Dr. Napoleon Savescu (director fondator al Dacia Revival International Society), General (rez.) Nicolae Spiroiu (fost Ministru al Apararii Nationale), Prof. dr. Mihai Popescu(Biblioteca Militara Nationala), Prof. univ. dr. dr. Alexander Rodewald(directorul Institutului de Biologie Umana al Universitatii din Hamburg, Germania), Dr. Georgeta Cardos (cercetator stiintific biolog specialist genetica - Institutul Victor Babes), Prof. doctorand Sebastian Stanculescu(paleografie si antropologie culturala).
-
-	  </p>
-	  <p> Dovezile stiintifice la care se face referire si argumentatia bazata pe izvoare istorice autentice, aduc informatii inedite si extrem de valoroase, capabile sa determine o rescriere a istoriei acestui popor. Toate acestea sunt sustinute de personalitati si specialisti care merita cu adevarat sa fie ascultati: General (rez.) dr. Mircea Chelaru (fost Sef al Marelui Stat Major al Armatei Romane), Dr. Napoleon Savescu (director fondator al Dacia Revival International Society), General (rez.) Nicolae Spiroiu (fost Ministru al Apararii Nationale), Prof. dr. Mihai Popescu(Biblioteca Militara Nationala), Prof. univ. dr. dr. Alexander Rodewald(directorul Institutului de Biologie Umana al Universitatii din Hamburg, Germania), Dr. Georgeta Cardos (cercetator stiintific biolog specialist genetica - Institutul Victor Babes), Prof. doctorand Sebastian Stanculescu(paleografie si antropologie culturala).
-
-	  </p>
-	  <p>Aduc informatii inedite si extrem de valoroase, capabile sa determine o rescriere a istoriei acestui popor. Toate acestea sunt sustinute de personalitati si specialisti care merita cu adevarat sa fie ascultati: General (rez.) dr. Mircea Chelaru (fost Sef al Marelui Stat Major al Armatei Romane), Dr. Napoleon Savescu (director fondator al Dacia Revival International Society), General (rez.) Nicolae Spiroiu (fost Ministru al Apararii Nationale), Prof. dr. Mihai Popescu(Biblioteca Militara Nationala), Prof. univ. dr. dr. Alexander Rodewald(directorul Institutului de Biologie Umana al Universitatii din Hamburg, Germania), Dr. Georgeta Cardos (cercetator stiintific biolog specialist genetica - Institutul Victor Babes), Prof. doctorand Sebastian Stanculescu(paleografie si antropologie culturala).
-	  </div>
-
-	  </p>
-	<div id="footer"> <center> <span> Copyright &copy; 2014 | F&#259 parte din societatea informa&#355;ional&#259;  </span></center>
-  </div>
+   </p>
+<p> 
+   <ul> 
+   <li>al doilea para para
+   </li>
+</ul>
+   </p>
+   <hr>
+   <button id="a1"> Baga un paragraf</button>
+   <button id="a2"> formular</button>
+   <button id="a3"> baga ceva la formular</button>
 
 </div>
-<p>
-
-</p>
-
+<br>
+<div>
+ <div id="formular" style="display:none">
+	      <form action="#" name="form" onsubmit="#">
+		      Nume:<input type="text" name="nume" id="ceva" /><br>
+			  E-mail:<input type="text" name="email"/><br>
+			  Mesaj:<textarea name="mesaj" cols="30" rows="3"></textarea><br>
+			  <hr width="25%" align="left">
+			  <div id="cacat">
+			  <input type="submit" name="submit"/>
+			  </div>
+	  </div>
+	 <div>
+</div>
 </body>
+<footer>
+</footer>
 </html>
