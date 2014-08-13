@@ -1,0 +1,458 @@
+body{
+margin: 1;
+padding:20 0 0 0;
+
+font-family:Verdana,sans-serif;
+background:url(http://bgfons.com/upload/stars_texture2942.jpg);
+
+
+}
+#header{
+margin:8 auto;
+width: 95%;
+height: 60px;
+background:rgb(60,57,141);
+font-weight:bold;
+color:white;
+padding: 5px 5px 5px 5px;
+
+
+
+
+}
+
+.titlu_cap{
+font-family: "Times New Roman",sans-serif;
+font-size:30px;
+color:purple;
+top:10px;
+left:20px;
+position:relative;
+}
+#continut{
+background-color: rgb(200,50,250);
+}
+#continut p
+{
+margin: 9px;
+text-align: justify;
+}
+#continut p::first-letter
+{
+color: yellow;
+font-size:large;
+font-family:"Brush ScriptMT",cursive;
+float:left;
+}
+#footer
+{
+margin: 2 auto;
+width: 90%;
+}
+.footer 
+{
+font-family: 'Lucida grande', sans-serif;
+font-weight:bold;
+font-size:20px;
+color: white;
+padding: 5px 5px 5px 25px;
+
+}
+.butoane 
+{
+margin: 5 20px;
+height:1px;
+padding: 5px 5px 5px 5px;
+color: white;
+border-color:red;
+}
+#mm
+{
+margin: 1 20px;
+height:1px;
+padding: 1px 1px 1px 200px;
+color: white;
+}
+a 
+{
+text-decoration:none
+}
+
+a:link 
+{
+color:yellow;
+}      /* unvisited link */
+a:visited 
+{
+color:rgb(250,100,250);
+}  /* visited link */
+
+a:active 
+{
+color:rgb(0,200,0);
+}
+  /* selected link */
+ a:hover
+{
+color:black;
+background-color:yellow;
+
+}
+
+.muie 
+{
+border-color:red;
+border:  solid;
+ border-collapse: separate;
+    border-spacing: 3px;
+
+
+}
+
+#istoric
+{
+
+}
+   
+#soare{
+    width:0px;
+	height:0px;
+    color:yellow;
+	background-color:purple;
+	font-family:"Source Code Pro Black";
+	font-size:160px;
+    position: relative;
+    aanimation: myfirst3 3s;
+	
+	animation-iteration-count: infinite;
+	
+}
+
+#mercur{
+    width: 0px;
+	height:0px;
+    color:rgb(250,200,160);
+	background-color:pink;
+	font-family:"Bauhaus 93";
+	font-size:20px;
+    position: relative;
+    animation: orbitalterra 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+
+#venus{
+    width: 0px;
+	height:0px;
+    color:rgb(210,210,255);
+	background-color:pink;
+	font-family:"Bauhaus 93";
+	font-size:40px;
+    position: relative;
+    animation: orbitalterra 9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+#terra{
+    width: 0px;
+	height:0px;
+    color:rgb(100,130,250);
+	background-color:pink;
+	font-family:"Source Code Pro Black";
+	font-size:40px;
+    position: relative;
+    animation: orbitalterra 12s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+#luna{
+    width: 0px;
+	height:0px;
+    color:rgb(200,180,170);
+	background-color:yellow;
+	font-family:"Bauhaus 93";
+	font-size:30px;
+    position: relative;
+    animation: orbitalluna 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+	
+#marte{
+    width: 0px;
+	height:0px;
+    color:rgb(250,100,50);
+	background-color:red;
+	font-family:"Bauhaus 93";
+	font-size:40px;
+    position: relative;
+    animation: orbitalmarte 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+	
+#jupiter{
+    width: 1px;
+	height:1px;
+    color:rgb(100,80,0);
+	background-color:green;
+	font-family:"Bauhaus 93";
+	font-size:70px;
+    position: relative;
+    animation: orbitaljupiter 36s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+#io{
+    width: 0px;
+	height:0px;
+    color:white;
+	background-color:white;
+	font-size:40px;
+	font-family:"Bauhaus 93";
+    position: relative;
+    animation: orbitalio 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+	
+#calisto{
+    width: 0px;
+	height:0px;
+    color:rgb(250,240,200);
+	background-color:red;
+	font-size:50px;
+	font-family:"Bauhaus 93";
+    position: relative;
+    animation: orbitalio 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+	
+#ganimede{
+    width: 0px;
+	height:0px;
+    color:rgb(255,240,180);
+	background-color:red;
+	font-size:60px;
+	font-family:"Bauhaus 93";
+    position: relative;
+    animation: orbitalio 8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+	
+#europa{
+    width: 0px;
+	height:0px;
+    color:rgb(200,180,170);
+	background-color:white;
+	font-size:50px;
+	font-family:"Bauhaus 93";
+    position: relative;
+    animation: orbitalterra 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+
+	
+   @keyframes myfirst {
+    0%  { left:0px; top:0px;}
+    33%  { left:100px; top:0px;}
+    66%  { right:100px; top:0px;}
+	100% {left:0px; top:0px;}
+	
+	}
+	
+	
+ 
+	
+	@keyframes orbitalterra {
+    0%  { left:18px; top:-375;}
+	6%   { left:74px; top:-362px;}
+	12%  { left:122px; top:-329px;}
+    18%  { left:155px; top:-281px;}
+    25%  { left:168px; top:-225px;}
+	31%  {left:155px; top:-169px;}
+    37%  { left:122px; top:-121px;}
+    43%  {left:74px; top:-88px;}
+	50%  { left:18px; top:-75px;}
+	56%  {left:-38px; top:-88px;}
+	62%  { left:-86px; top:-121px;}
+    68%  {left:-119px; top:-169px;}
+    75%  { left:-132px; top:-225px;}
+	81%  {left:-119px; top:-281px;}
+    87%  { left:-86px; top:-329px;}
+	93%  {left:-38px; top:-362px;}
+    100% {left:18px; top:-375px;}
+	
+	}   
+	
+	@keyframes orbitalluna {
+    0%  { left:12px; top:-190px;}
+	6%   { left:39px; top:-183px;}
+	12%  { left:63px; top:-166px;}
+    18%  { left:80px; top:-142px;}
+    25%  { left:87px; top:-115px;}
+	31%  {left:80px; top:-88px;}
+    37%  { left:63px; top:-64px;}
+    43%  {left:39px; top:-47px;}
+	50%  { left:12px; top:-40px;}
+	56%  {left:-15px; top:-47px;}
+	62%  {left:-39px; top:-64px;}
+    68%  {left:-56px; top:-88px;}
+    75%  {left:-63px; top:-115px;}
+	81%  {left:-56px; top:-142px;}
+    87%  {left:-39px; top:-166px;}
+	93%  {left:-15px; top:-183px;}
+    100% {left:12px; top:-190px;}
+	}
+	
+	@keyframes orbitalio {
+    0%  { left:12px; top:-190px;}
+	6%   { left:39px; top:-183px;}
+	12%  { left:63px; top:-166px;}
+    18%  { left:80px; top:-142px;}
+    25%  { left:87px; top:-115px;}
+	31%  {left:80px; top:-88px;}
+    37%  { left:63px; top:-64px;}
+    43%  {left:39px; top:-47px;}
+	50%  { left:12px; top:-40px;}
+	56%  {left:-15px; top:-47px;}
+	62%  {left:-39px; top:-64px;}
+    68%  {left:-56px; top:-88px;}
+    75%  {left:-63px; top:-115px;}
+	81%  {left:-56px; top:-142px;}
+    87%  {left:-39px; top:-166px;}
+	93%  {left:-15px; top:-183px;}
+    100% {left:12px; top:-190px;}
+	}
+	
+	@keyframes orbitalEEio {
+    0%  { color:rgb(0,0,0);left:0px; top:0px;}
+	6%   { color:rgb(0,0,100);left:2px; top:-8px;}
+	12%  { color:rgb(0,0,175);left:6px; top:-14px;}
+    18%  { color:rgb(0,0,255);left:12px; top:-18px;}
+    25%  { color:rgb(50,50,255);left:20px; top:-20px;}
+	31%  {color:rgb(100,100,255);left:28px; top:-18px;}
+    37%  { color:rgb(100,100,255);left:34px; top:-14px;}
+    43%  {color:rgb(200,200,255);left:38px; top:-8px;}
+	50%  { color:rgb(255,255,255);left:40px; top:0px;}
+	56%  {color:rgb(255,255,255);left:38px; top:8px;}
+	62%  {color:rgb(200,200,255); left:34px; top:14px;}
+    68%  {color:rgb(100,100,255);left:28px; top:18px;}
+    75%  { color:rgb(50,50,255);left:20px; top:20px;}
+	81%  {color:rgb(0,0,255);left:12px; top:18px;}
+    87%  { color:rgb(0,0,175);left:6px; top:14px;}
+	93%  {color:rgb(0,0,100);left:2px; top:8px;}
+    100% {color:rgb(0,0,0);left:0px; top:0px;}
+	
+	}   
+	
+	
+	@keyframes orbitalmarte {
+    0%  { left:-230px; top:-160px;}
+	6%   { left:-206px; top:-280px;}
+	12%  { left:-143px; top:-370px;}
+    18%  { left:-50px; top:-430px;}
+    25%  { left:70px; top:-460px;}
+	31%  {left:193px; top:-430px;}
+    37%  { left:283px; top:-370px;}
+    43%  {left:343px; top:-280px;}
+	50%  { left:370px; top:-160px;}
+	56%  {left:343px; top:-40px;}
+	62%  { left:283px; top:50px;}
+    68%  {left:193px; top:110px;}
+    75%  {left:70px; top:140px;}
+	81%  {left:-50px; top:110px;}
+    87%  {left:-143px; top:50px;}
+	93%  {left:-206px; top:-40px;}
+    100% {left:-230px; top:-160px;}
+	}
+	
+	@keyframes orbitaljupiter {
+    0%  { left:-250px; top:-250px;}
+	6%   { left:-226px; top:-370px;}
+	12%  { left:-163px; top:-460px;}
+    18%  { left:-70px; top:-520px;}
+    25%  { left:50px; top:-550px;}
+	31%  {left:173px; top:-520px;}
+    37%  { left:263px; top:-460px;}
+    43%  {left:323px; top:-370px;}
+	50%  { left:350px; top:-250px;}
+	56%  {left:323px; top:-130px;}
+	62%  { left:263px; top:-40px;}
+    68%  {left:173px; top:20px;}
+    75%  {left:50px; top:50px;}
+	81%  {left:-70px; top:20px;}
+    87%  {left:-163px; top:-40px;}
+	93%  {left:-226px; top:-130px;}
+    100% {left:-250px; top:-250px;}
+	}
+	@keyframes test {
+    0%  { left:18px; top:-375px;}
+	
+    25%  {left:168px; top:-225px;}
+	
+	50%  { left:18px; top:-75px;}
+	
+    75%  { left:-132px; top:-225px;}
+	
+    100% {left:18px; top:-375px;}
+	}
+	
+	@keyframes test2 {
+    0%  { left:12px; top:-115px;}
+	
+    25%  {left:100px; top:-100px;}
+	
+	50%  { left:200px; top:0px;}
+	
+    75%  { left:100px; top:100px;}
+	
+    100% {left:12px; top:-115px;}
+	}
+	
+	#centru
+	{
+	padding:30 0 0 30;
+	color :black;
+	position:absolute;
+
+	font-size:14;
+	}
+	
+	
+	#spatiu
+	{
+	padding: 0 0 0 0;
+	}
+	
+	.hidden { display: none; }
+.visible { display: block; }
+.soare1
+{ 
+padding:30 0 0 20;
+
+}
+.button {
+
+            background-color: rgba(0, 0, 0, 0.1);
+         
+
+        }
+		
+		.btn {
+    width: 4em; 
+	height: 4em;
+	color:yellow;
+		border-radius: 26px;
+		background:url(galax.jpg);
+	
+	
+} 
+
+
+
