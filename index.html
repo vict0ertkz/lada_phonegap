@@ -1,124 +1,40 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <head>
+    <title>Acceleration Example</title>
 
- <link rel="stylesheet" type="text/css" href="css.css"/>
- <title> Victor Aerospace
- </title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
- <script type="text/javascript">
- 
-  function unhide(divID) {
-    var item = document.getElementById(divID);
-    if (item) {
-      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
     }
-  }
-</script>
- </head>
-<body >
-<div id="header">
-Victor Aerospace Home
-</div>
- 
-  <div class="butoane">
-   <table height="50px" width="100%" >
-    <tr class="cacat">
-     <td><a id="Home" href="#" >Home</a></td>
-     <td><a id="Istoric" href="Istoric.html" >Istoric</a></td>
-     <td><a id="Proiecte" href="Proiecte.html">Proiecte</a></td>
-     <td><a id="Galerie" href="Galerie.html">Galerie</a></td>
-     <td><a id="Contact" href="Contact.html" >Contact</a></td>
-    </tr>
-   </table>
-  </div>
-  <div>
-  
-   </div>
-   <div>
-   <table id="mm" height="50px" width="40%" >
-   <tr>
-   <td>
-        <div>
-	       
-	    </div>
-   </td>
-      <td>
-           <div id="spatiu">
-               <div id="soare" class="hidden"><br>✹
-			       <div id="mercur"class="hidden"><br><br><br><br>⚫
-		           </div>
-				   <div id="venus"class="hidden"><br><br><br>⚫
-		           </div>
-		           <div id="terra"class="hidden"><br><br>⬤
-		               <div id="luna"class="hidden"><br>⚫
-				       </div>
-		           </div>
-		           <div id="marte"class="hidden"><br>●
-		           </div>
-		           <div style="z-index:3"id="jupiter"class="hidden"><br>⬤
-				        <div style="z-index:2"id="europa"class="hidden"><br>●
-		                </div>
-				        <div style="z-index:1"id="io"class="hidden"><br>●
-		                </div>
-						<div style="z-index:4"id="calisto"class="hidden"><br>•
-		                </div>
-						<div style="z-index:5"id="ganimede"class="hidden"><br>•
-		                </div>
-		           </div>
-		       </div>
-			   
-		   </div>
-      </td>
-     
-   </tr>
-   </table>
-   </div class="sistem">
-   <br>
-		<div class="soare1"><button type="button" class="btn" onclick="javascript:unhide('mercur1');
-															 javascript:unhide('venus1');
-															 javascript:unhide('terra1');
-		                                                    javascript:unhide('soare');
-														     javascript:unhide('marte1');
-															 javascript:unhide('jupiter1');
-															 " >Soare</button>
-		    <div class="hidden" id="mercur1"><button type="button" class="btn" onclick="javascript:unhide('mercur');" >Mercur</button>	
-			</div>
-			<div class="hidden" id="venus1"><button type="button" class="btn" onclick="javascript:unhide('venus');" >Venus</button>	
-			</div>															 
-		    <div id="terra1" class="hidden"><button type="button" class="btn" onclick="javascript:unhide('terra');javascript:unhide('luna1')" >Terra</button>	
-				<div class="hidden" id="luna1"><button type="button" class="btn" onclick="javascript:unhide('luna')" >Luna</button>	
-				</div>
-			</div>
-			<div class="hidden" id="marte1"><button type="button" class="btn" onclick="javascript:unhide('marte');" >Marte</button>	
-			</div>
-			<div class="hidden" id="jupiter1"><button type="button" class="btn" onclick="javascript:unhide('jupiter');
-			                                                                      javascript:unhide('io1');
-																			 javascript:unhide('calisto1');
-																			  javascript:unhide('europa1');
-																		    javascript:unhide('ganimede1')" >Jupiter</button>
-			     <div class="hidden" id="io1"><button type="button" class="btn" onclick="javascript:unhide('io')" >Io</button>
-	             </div>
-				 <div class="hidden" id="europa1"><button type="button" class="btn" onclick="javascript:unhide('europa')" >Europa</button>
-	             </div>
-				 <div class="hidden" id="calisto1"><button type="button" class="btn" onclick="javascript:unhide('calisto')" >Calisto</button>
-	             </div>
-				 <div class="hidden" id="ganimede1"><button type="button" class="btn" onclick="javascript:unhide('ganimede')" >Ganimede</button>
-	             </div>
-	        </div>
-	    </div>
-	
-  
-   <div>
-   </div>
 
-   
-</body>
+    // onSuccess: Get a snapshot of the current acceleration
+    //
+    function onSuccess(acceleration) {
+        alert('Acceleration X: ' + acceleration.x + '\n' +
+              'Acceleration Y: ' + acceleration.y + '\n' +
+              'Acceleration Z: ' + acceleration.z + '\n' +
+              'Timestamp: '      + acceleration.timestamp + '\n');
+    }
 
- <footer class="footer">
- <p></p>
- </footer>
+    // onError: Failed to get the acceleration
+    //
+    function onError() {
+        alert('onError!');
+    }
+
+    </script>
+  </head>
+  <body>
+    <h1>Example</h1>
+    <p>getCurrentAcceleration</p>
+  </body>
 </html>
